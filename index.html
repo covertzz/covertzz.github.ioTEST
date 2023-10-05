@@ -1,19 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>cool page title</title>
+<title>covertz.blog</title>
+<style>
+    ul {
+        position: fixed;
+        width: 100%;
+        top:0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+    .active {
+        background-color: #0478aa;
+    }
+</style>
 </head>
 
-<body>
-<h1>Hello World</h1>
-  <p>Aspiring cybersecurity student (and blog writer xD)</p>
-  <p>Blog and stylization incoming!</p>
+<ul>
+    <li><a class = "active" href="index.html">Home</a></li>
+    <li><a href="#about">About me</a></li>
+</ul> 
 
-  <p>Experience: Edwards Lifesciences - IT Security Intern (Summer 2023)</p>
-  <p>            Collegiate Penetration Testing Competition - Participant (August 2023 - Present)</p>
+<body style="background-color:powderblue;" > 
+    <div style="padding:10px;margin-top:30px;height:1500px;">
+        <h1>Palmer Du (aka covertz)</h1>
+        
+    
+        <p>Aspiring cybersecurity student (and blog writer xD)</p>
+        <p>Blog and stylization in progress!</p>
+        
+        <a href="https://monkeytype.com/">My favorite site to visit when im bored</a>
+        <br> <br>
+        <a href="https://www.nytimes.com/games/wordle/index.html">Did you do todays wordle?</a>
+        <br>
+        <br>
 
-  <p>Extracurricular: Students With and Interest in the Future of Technology (SWIFT) - Director of Marketing</p>
-  
-  
+        <p id="demo"></p>
+        <p>&#129312</p>
+        <p>&#129312</p>
+        
+
+        <script>
+            document.getElementById("demo").innerHTML = "This is JavaScript!";
+        </script> 
+
+        <p> This is a party guy!</p>
+        <img src="partyguy.jpg" style="width:500px;height:600px;"> 
+
+        <p>
+            <h2 id="about">About me!</h2>
+            Education: California Polytechnic State University, Pomona (CPP). 
+            <br>        Bachelor's of Computer Science graduating fall 2024. <br>
+            <br>
+            Experience: Edwards Lifesciences - IT Security Intern (Summer 2023)
+            <br>          During this internship, I helped implement security tools like Illumio, ServiceNow, CrowdStrike Falcon, and CyberArk. <br>
+            <br>
+                        Collegiate Penetration Testing Competition - Participant (August 2023 - Present)
+            <br>          CPTC is a penetration testing competition desined to simulate real-world engagements, with a focus on business skills. <br>
+            <br>
+            Extracurricular: Students With and Interest in the Future of Technology (SWIFT) - Director of Marketing (May 2023 - Present); Mentor (January 2023 - Present); Intern (January 2023 - May 2023)
+            <br>               SWIFT is a cybersecurity club that teaches students all aspects of cybersecurity including network, forensic, and offensive security. <br>
+            <br>
+        </p>
+    </div>
 </body>
 </html>
