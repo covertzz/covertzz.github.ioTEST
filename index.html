@@ -2,42 +2,12 @@
 <html lang="en">
 <head>
 <title>covertz.blog</title>
-<style>
-    ul {
-        position: fixed;
-        width: 100%;
-        top:0;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-    }
-    
-    li {
-      float: left;
-    }
-    
-    li a{
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    li a:hover:not(.active) {
-        background-color: #111;
-    }
-    .active {
-        background-color: #0478aa;
-    }
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <ul>
     <li><a class = "active" href="index.html">Home</a></li>
-    <li><a href="#about">About me</a></li>
+    <li><a href="blog">Blog</a></li>
 </ul> 
 
 <body style="background-color:powderblue;" > 
@@ -63,24 +33,45 @@
             document.getElementById("demo").innerHTML = "This is JavaScript!";
         </script> 
 
-        <p> This is a party guy!</p>
-        <img src="partyguy.jpg" style="width:500px;height:600px;"> 
+        <h2 id="about">About me!</h2>
+        <button class="collapsible">Education</button>
+        <div class="content">
+            <p>Education: California Polytechnic State University, Pomona (CPP). Bachelor's of Computer Science graduating fall 2024.</p>
+        </div>
+        <button class="collapsible">Experience</button>
+        <div class="content">
+            <p> 
+                Edwards Lifesciences - IT Security Intern (Summer 2023) 
+                <br>During this internship, I helped implement security tools like Illumio, ServiceNow, CrowdStrike Falcon, and CyberArk.
+                <br>
+                <br>Collegiate Penetration Testing Competition - Participant (August 2023 - Present)
+                <br>CPTC is a penetration testing competition desined to simulate real-world engagements, with a focus on business skills.
+            </p>
+        </div>
+        <button class="collapsible">Extracurricular</button>
+        <div class="content"> 
+            <p>
+                Students With and Interest in the Future of Technology (SWIFT) - Director of Marketing (May 2023 - Present); Mentor (January 2023 - Present); Intern (January 2023 - May 2023)
+            </p>
+        </div>
 
-        <p>
-            <h2 id="about">About me!</h2>
-            Education: California Polytechnic State University, Pomona (CPP). 
-            <br>        Bachelor's of Computer Science graduating fall 2024. <br>
-            <br>
-            Experience: Edwards Lifesciences - IT Security Intern (Summer 2023)
-            <br>          During this internship, I helped implement security tools like Illumio, ServiceNow, CrowdStrike Falcon, and CyberArk. <br>
-            <br>
-                        Collegiate Penetration Testing Competition - Participant (August 2023 - Present)
-            <br>          CPTC is a penetration testing competition desined to simulate real-world engagements, with a focus on business skills. <br>
-            <br>
-            Extracurricular: Students With and Interest in the Future of Technology (SWIFT) - Director of Marketing (May 2023 - Present); Mentor (January 2023 - Present); Intern (January 2023 - May 2023)
-            <br>               SWIFT is a cybersecurity club that teaches students all aspects of cybersecurity including network, forensic, and offensive security. <br>
-            <br>
-        </p>
-    </div>
+        <script>
+            var col = document.getElementsByClassName("collapsible");
+            var i;
+        
+            for (i = 0; i < col.length; i++) {
+            col[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+        </script>
+
+        
 </body>
 </html>

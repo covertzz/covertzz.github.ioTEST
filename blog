@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>covertz.blog</title>
+<link rel="shortcut icon" type="image/jpg" href="images/sammy.jpeg"/>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a class = "active" href="blog">Blog</a></li>
+</ul> 
+
+<body style="background-color:powderblue;" > 
+    <div style="padding:10px;margin-top:30px;height:1500px;">
+        <h2 id ="blog">Blog</h2>
+        <button onclick="cptcJourney()">CPTC: The Journey</button>
+
+        <div class="itc2023">
+            <a href = "itc2023"><img src="images/partyguy.JPG" style="width:300px;height:400px;" alt="partyguy"></a>
+        </div>
+        
+    </div>
+     
+
+    <script>
+        function itc2023() {
+            window.location.href = "itc2023";
+        }
+        function cptcJourney() {
+            window.location.href = "cptcJourney";
+        }
+
+    </script>
+</body>
+</html>

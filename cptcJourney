@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>covertz.blog</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a class = "active" href="blog">Blog</a></li>
+</ul> 
+
+<body style="background-color:powderblue;" > 
+    <div style="padding:10px;margin-top:30px;height:1500px;">
+        <h1>CPTC: The Journey</h1>
+    </div>
+</body>
+</html>
